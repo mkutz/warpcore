@@ -15,7 +15,7 @@ class InfrastructureSpec extends Specification {
 
     def "infrastructure should be able to tell me if a service is enabled"() {
         expect:
-        !infrastructure.services."rsync"?.isEnabled()
+        infrastructure.services."rsync"?.isEnabled()
     }
 
     def "an unknown service should be null"() {

@@ -1,7 +1,9 @@
 package de.assertagile.warpcore.service
 
 import groovy.transform.ToString
+import groovy.util.logging.Slf4j
 
+@Slf4j
 @ToString(includeFields = true, includePackage = false)
 class Service {
 
@@ -21,6 +23,9 @@ class Service {
     public Boolean isEnabled() {
         Process process = "ls -1 /etc/init.d/".execute()
         List<String> enabledServices = process.text.split("\n")
+
+        log.info("Discovered enabled services:\n\t${enabledServices.join("\n\t")}")
+
         enabledServices.contains(name)
     }
 }

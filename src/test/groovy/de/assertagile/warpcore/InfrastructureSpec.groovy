@@ -13,12 +13,12 @@ class InfrastructureSpec extends Specification {
 
     def "infrastructure should be able to tell me if a service is running"() {
         expect:
-        infrastructure.services."cron".running
+        !infrastructure.services."rsync".isRunning()
     }
 
     def "infrastructure should be able to tell me if a service is enabled"() {
         expect:
-        infrastructure.services."network-manager".enabled
+        infrastructure.services."network-manager".isEnabled()
     }
 
     def "an unknown service should be null"() {

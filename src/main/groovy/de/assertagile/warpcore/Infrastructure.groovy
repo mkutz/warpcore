@@ -1,19 +1,16 @@
 package de.assertagile.warpcore
 
 import de.assertagile.warpcore.service.Service
+import de.assertagile.warpcore.service.Services
 
 class Infrastructure {
 
-    private Collection<Service> services
+    private Services services
 
-    public Collection<Service> getServices() {
+    public Services getServices() {
         if (services == null) {
-            services = discoverServices()
+            services = new Services()
         }
-        return services
-    }
-
-    private Collection<Service> discoverServices() {
-        return []
+        services
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.assertagile.warpcore</groupId>
@@ -8,10 +9,10 @@
 
     <name>Warpcore</name>
     <description>
-    	This might become a testframework for JVM based infrastructure tests mainly meant for the
-    	[Spock Framwork](http://spockframework.org). Like [Geb](http://www.gebish.org/) is providing
-    	a Selenium wrapper as a Browser object, Warpcore should provide an infrastructure
-    	representation as an Infrastructure object.
+        This might become a testframework for JVM based infrastructure tests mainly meant for the
+        [Spock Framwork](http://spockframework.org). Like [Geb](http://www.gebish.org/) is providing
+        a Selenium wrapper as a Browser object, Warpcore should provide an infrastructure
+        representation as an Infrastructure object.
     </description>
     <url>https://github.com/mkutz/warpcore</url>
 
@@ -61,7 +62,7 @@
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>
-            <version>1.1-groovy-2.4-SNAPSHOT</version>
+            <version>1.0-groovy-2.4</version>
             <scope>test</scope>
         </dependency>
 
